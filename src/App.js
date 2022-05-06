@@ -10,13 +10,12 @@ function App() {
     }, [])
 
     return (
-        <div className="App">
+        <>
             <Particles options={particlesOptions} init={particlesInit} />
-            <header className="App-header">
-                Hello World
-            </header>
-
-        </div>
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
+        </>
     );
 }
 
