@@ -1,0 +1,39 @@
+.xyzabc {
+    box-shadow: 0 14px 24px rgb(0 0 0 / 20%);
+    z-index: 399;
+}
+
+/* .xyzabc:hover {
+    box-shadow: 0 14px 24px rgb(0 0 0 / 20%);
+    z-index: 400;
+    transform: scale(1.1);
+    transition: all .25s ease;
+} */
+
+/* ------------- Hlaf Border -------------- */
+
+
+.xyzabc-half-border::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px rgb(80, 52, 205);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+/* // from-center // */
+.xyzabc-half-border:hover::after {
+    transform: scaleX(1);
+}
+
+/* // from-right // */
+/* .xyzabc-half-border:hover::after {
+    transform-origin: 100% 50%;
+    transform: scaleX(1)
+} */
+
+/* // from-left // */
+/* .xyzabc-half-border.hover::after {
+    transform-origin: 0% 50%;
+    transform: scaleX(1)
+} */

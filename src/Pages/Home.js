@@ -13,9 +13,11 @@ const Home = () => {
     return (
         <>
             <Particles options={particlesOptions} init={particlesInit} />
-            <h1 className="text-3xl text-white font-bold underline">
-                Home Page!
-            </h1>
+            <div className='h-screen'>
+                <h1 className="text-3xl text-white font-bold underline">
+                    Home Page!
+                </h1>
+            </div>
         </>
     )
 }
