@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import UserInputForm from '../Components/UserInputForm';
 import particlesOptions from "../particles.json";
 
 
@@ -12,11 +13,9 @@ const Home = () => {
 
     return (
         <>
-            <Particles options={particlesOptions} init={particlesInit} />
-            <div className='h-screen'>
-                <h1 className="text-3xl text-white font-bold underline">
-                    Home Page!
-                </h1>
+            {/* <Particles options={particlesOptions} init={particlesInit} /> */}
+            <div className=''>
+                <UserInputForm />
             </div>
         </>
     )
