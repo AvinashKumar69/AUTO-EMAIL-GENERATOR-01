@@ -1,20 +1,16 @@
-import React, { useCallback } from 'react';
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import particlesOptions from "./particles.json";
+import Home from './Pages-Screens/Home';
+
 
 function App() {
-    const particlesInit = useCallback(main => {
-        loadFull(main);
-    }, [])
 
     return (
         <>
-            <Particles options={particlesOptions} init={particlesInit} />
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+            </Routes>
         </>
     );
 }
