@@ -17,7 +17,7 @@
     display: block;
     content: '';
     border-bottom: solid 3px rgb(80, 52, 205);
-    transform: scaleX(0);
+    transform: scaleX(0.5);
     transition: transform 250ms ease-in-out;
 }
 

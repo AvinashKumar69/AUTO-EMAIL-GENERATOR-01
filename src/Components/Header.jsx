@@ -9,7 +9,7 @@ const Header = () => {
             <h3 className="xyzabc-half-border">
                 Auto Email Template Generator
             </h3>
-            <button className="" type="button">
+            <button className="xyzabc-half-border" type="button">
                 Log In
             </button>
         </div>
