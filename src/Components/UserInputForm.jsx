@@ -17,10 +17,10 @@ const UserInputForm = () => {
 
     const submitHandler = () => {
 
-        const inputForm = (!name || !managerName || !designation || !companyName || !resignationDate || !nonWorkEmail)
-        alert('Please Fill All the Details!')
+        // const inputForm = (!name || !managerName || !designation || !companyName || !resignationDate || !nonWorkEmail)
+        // alert('Please Fill All the Details!')
 
-        if (inputForm) {
+        if (name && managerName && designation && companyName && resignationDate && nonWorkEmail) {
             let formId = 1
             navigate(`/${formId}`, { state: { name, managerName, designation, companyName, resignationDate, nonWorkEmail } })
         }
